@@ -1,0 +1,56 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<div class="govuk-grid-row">
+    <span class="govuk-caption-xl">Ship operator no: 123456789</span>
+    <h1 class="govuk-heading-xl">John Smith Shipping LTD</h1>
+
+    <table class="govuk-table">
+      <!-- <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Ship</th>
+          <th scope="col" class="govuk-table__header">IMO</th>
+          <th scope="col" class="govuk-table__header">Flag</th>
+          <th scope="col" class="govuk-table__header">Type</th>
+          <th scope="col" class="govuk-table__header">ER status</th>
+          <th scope="col" class="govuk-table__header">Verifier</th>
+          <th scope="col" class="govuk-table__header">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Stena Nordica</th>
+          <td class="govuk-table__cell">4123788</td>
+          <td class="govuk-table__cell">Portugal</td>
+          <td class="govuk-table__cell">Vehicle carrier</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Draft</strong></td>
+          <td class="govuk-table__cell">VH Veritas...</td>
+          <td class="govuk-table__cell"><a href="task-list"*>View</a></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Iron Gust</th>
+          <td class="govuk-table__cell">7664789</td>
+          <td class="govuk-table__cell">Cayman Islands</td>
+          <td class="govuk-table__cell">Cargo</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell">VH Veritas...</td>
+          <td class="govuk-table__cell"><a href="task-list"*>View</a></td>
+        </tr>
+      </tbody>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">November</th>
+        <td class="govuk-table__cell">0168433</td>
+        <td class="govuk-table__cell">Greece</td>
+        <td class="govuk-table__cell">Oil tanker</td>
+        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+        <td class="govuk-table__cell">VH Veritas...</td>
+        <td class="govuk-table__cell"><a href="task-list"*>View</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+{% endblock %}
