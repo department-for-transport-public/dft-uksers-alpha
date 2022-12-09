@@ -6,8 +6,19 @@
       <h1 class="govuk-heading-xl">Emissions report for Stena Nordica
       </h1>
 
-      <p class="govuk-body govuk-!-margin-bottom-7">You can <a href="/file-upload">bulk upload data here</a>.</p>
-
+      <div class="govuk-notification-banner " role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Upload a file
+          </h2> 
+        </div>
+        <div class="govuk-notification-banner__content">
+          
+          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"><a href="task-list-uploaded" button class="govuk-button" data-module="govuk-button">
+            Upload
+          </button></a>
+        </div>
+      </div>
 
       <ol class="app-task-list">
         <li>

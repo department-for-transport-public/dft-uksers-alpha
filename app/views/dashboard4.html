@@ -1,6 +1,19 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
 {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
 <div class="govuk-grid-row">
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Emission report sent to veriefier
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <h3 class="govuk-notification-banner__heading">
+        You will receive an email when the emissions report is complete or needs revision. 
+
+      </h3>
+    </div>
+  </div>
     <span class="govuk-caption-xl">Ship operator no: 123456789</span>
     <h1 class="govuk-heading-xl">John Smith Shipping LTD</h1>
     <div class="govuk-form-group">
@@ -33,9 +46,11 @@
           <td class="govuk-table__cell">4123788</td>
           <td class="govuk-table__cell">Portugal</td>
           <td class="govuk-table__cell">Vehicle carrier</td>
-          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--blue">Draft</strong></td>
+          <td class="govuk-table__cell"> <strong class="govuk-tag govuk-tag--yellow">
+            With verifier
+          </strong></td>
           <td class="govuk-table__cell">VH Veritas...</td>
-          <td class="govuk-table__cell"><a href="tabs"*>View</a></td>
+          <td class="govuk-table__cell"><a href="task-list"*>Retract</a></td>
         </tr>
       </tbody>
       <tbody class="govuk-table__body">
