@@ -1,0 +1,77 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+              Emissions report submitted to verifier
+            </h1>
+            <div class="govuk-panel__body">
+              Your reference number<br><strong>4123788</strong>
+            </div>
+          </div>
+          <p class="govuk-body">We have sent you a confirmation email.</p>
+
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Ship
+              </dt>
+              <dd class="govuk-summary-list__value">
+                MOL Triumph
+              </dd>
+             
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                IMO
+              </dt>
+              <dd class="govuk-summary-list__value">
+                4123788
+              </dd>
+             
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+               Reporting period
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">2022</p>
+              </dd>
+             
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Verifier
+              </dt>
+              <dd class="govuk-summary-list__value">
+                VH Veritas Portugal
+              </dd>
+              
+            </div>
+           
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Time and date of submission
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <p class="govuk-body">12:00pm, 5 December 2022</p>
+              </dd>
+             
+            </div>
+          </dl>
+  
+          <h2 class="govuk-heading-m">What happens next</h2>
+          <p class="govuk-body">
+            We’ve sent your emissions report to <strong>VH Veritas Portugal </strong>to review.
+          </p>
+          <p class="govuk-body">
+            They will contact you to either verify your emissions report, or to ask for more information.
+          </p>
+          <p class="govuk-body">
+            You can view the <a href="dashboard4" class="govuk-link">status of the emissions report</a> on your fleet dashboard.
+          </p>
+        </div>
+      </div>
+
+{% endblock %}

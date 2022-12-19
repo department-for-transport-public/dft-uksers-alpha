@@ -1,8 +1,7 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
 {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
 <div class="govuk-grid-row">
-      <span class="govuk-caption-xl">IMO: 4123788</span>
-      <h1 class="govuk-heading-xl">Emissions report for MOL Triumph	</h1>
+    <div class="govuk-grid-column-two-thirds">
       <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
         <div class="govuk-notification-banner__header">
           <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
@@ -15,79 +14,12 @@
           </h3>
         </div>
       </div>
+      <span class="govuk-caption-xl">IMO: 4123788</span>
+      <h1 class="govuk-heading-xl">Emissions report for MOL Triumph	</h1>
+   
 
-      <div class="govuk-tabs" data-module="govuk-tabs">
-        <h2 class="govuk-tabs__title">
-          Contents
-        </h2>
-        <ul class="govuk-tabs__list">
-          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-            <a class="govuk-tabs__tab" href="#past-day">
-              ER period
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#past-week">
-              Voyages
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#past-month">
-              Cargo
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#past-year">
-              Fuel consumption
-            </a>
-          </li>
-        </ul>
-        <div class="govuk-tabs__panel" id="past-day">
-          <h2 class="govuk-heading-l">Emissions report period</h2>
-          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Reporter
-              </dt>
-              <dd class="govuk-summary-list__value">
-                Sarah Philips
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
-              </dd>
-            </div>
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Creation date
-              </dt>
-              <dd class="govuk-summary-list__value">
-                5 January 2022
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> date of birth</span>
-                </a>
-              </dd>
-            </div>
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Reporting period
-              </dt>
-              <dd class="govuk-summary-list__value">
-                2021
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> address</span>
-                </a>
-              </dd>
-            </div>
-           
-          </dl>
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+     
+        
           <h2 class="govuk-heading-l">Voyages</h2>
           <dl class="govuk-summary-list govuk-!-margin-bottom-9">
             <div class="govuk-summary-list__row">
@@ -98,9 +30,7 @@
                 Rio de Janeiro, Brazil
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+              
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -111,9 +41,7 @@
                 12:00pm, 5 January 2022
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> date of birth</span>
-                </a>
+              
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -124,9 +52,7 @@
                 Lisbon, Portugal
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+             
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -137,9 +63,7 @@
                 12:00pm, 6 January 2022
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> date of birth</span>
-                </a>
+              
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -150,9 +74,7 @@
                 232 hours
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+           
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -163,9 +85,7 @@
                 39 hours
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> date of birth</span>
-                </a>
+            
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -176,9 +96,7 @@
                 Lisbon, Portugal
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+            
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -189,15 +107,11 @@
                 4225 n miles
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> date of birth</span>
-                </a>
+              
               </dd>
             </div>
            
           </dl>
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
           <h2 class="govuk-heading-l">Cargo</h2>
           <dl class="govuk-summary-list govuk-!-margin-bottom-9">
             <div class="govuk-summary-list__row">
@@ -208,9 +122,7 @@
                 Rio de Janeiro, Brazil
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+             
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -221,9 +133,7 @@
                 5725 m tonnes
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> date of birth</span>
-                </a>
+             
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -234,9 +144,7 @@
                 4325 dwt carried
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+            
               </dd>
             
             
@@ -244,8 +152,6 @@
            
            
           </dl>
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
           <h2 class="govuk-heading-l">Fuel consumption</h2>
           <dl class="govuk-summary-list govuk-!-margin-bottom-9">
             <div class="govuk-summary-list__row">
@@ -256,9 +162,7 @@
                 Heavy fuel oil (HFO)
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+              
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -269,9 +173,7 @@
                 1408 m²
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> date of birth</span>
-                </a>
+              
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -282,22 +184,18 @@
                 0.95 m tonnes/m²
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+            
               </dd>
             </div>
             <div class="govuk-summary-list__row">
               <dt class="govuk-summary-list__key">
-                Emmision factor
+                Emissions  factor
               </dt>
               <dd class="govuk-summary-list__value">
                 3.114  t CO₂/t-fuel
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+              
               </dd>
             </div>
             <div class="govuk-summary-list__row">
@@ -308,25 +206,59 @@
                 4209.1315  m tonnes
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
-                  Change<span class="govuk-visually-hidden"> name</span>
-                </a>
+              
               </dd>
             </div>
           </dl>
-        </div>
-      </div>
-      <div class="govuk-grid-column-two-thirds">
-
-        <h2 class="govuk-heading-m">Now submit emissions report to verifier</h2>
-        <p class="govuk-body">By submitting this emissions report you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-  
+          <h2 class="govuk-heading-l">Reporting period</h2>
+          <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+            <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Reporting period 
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  2022
+                </dd>
+                <dd class="govuk-summary-list__actions">
+               
+                </dd>
+              </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Reporter
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Sarah Philips
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Creation date
+              </dt>
+              <dd class="govuk-summary-list__value">
+                5 December 2022
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              
+              </dd>
+            </div>
+         
+           
+          </dl>
           
-      <a href="confirmation" button class="govuk-button" data-module="govuk-button">
-        Submit to verifier
-      </button></a>
-    </div>
-  </div>
+        </div>
+     
+      </div>
+    
+      <h2 class="govuk-heading-m">Now submit emissions report to verifier</h2>
+      <p class="govuk-body">By submitting this emissions report you are confirming that, <br>to the best of your knowledge, the details you are providing are correct.</p>
 
+        
+    <a href="confirmation" button class="govuk-button" data-module="govuk-button">
+      Submit to verifier
+    </button></a>
 
 {% endblock %}
