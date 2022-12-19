@@ -6,7 +6,7 @@
     <h1 class="govuk-heading-xl">Emissions reports</h1>
     <div class="govuk-form-group">
       <span class="govuk-error-message"></span>
-      <span class="govuk-caption-m">Filter by IMO, ship name, flag or Emissions report</span>
+      <span class="govuk-caption-m">Filter by ship name, IMO or status</span>
       <input id="filterInput" type="text" aria-label="Enter IMO, submission reference or email to filter results by" class="govuk-input govuk-input--width-20">
       <button id="filter" class="govuk-button" onclick="filterTable()" type="button">Filter</button>
       <div id="currentFilterList">
@@ -47,17 +47,37 @@
           <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
         </tr>
       </tbody>
-    <tbody class="govuk-table__body">
-      <tr class="govuk-table__row">
-        <th scope="row" class="govuk-table__header">November</th>
-        <td class="govuk-table__cell">0168433</td>
-        <td class="govuk-table__cell">2022</td>
-        <td class="govuk-table__cell">VH Veritas...</td>
-        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
-        <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
-      </tr>
-    </tbody>
-  
+      
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">November</th>
+          <td class="govuk-table__cell">0168433</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">VH Veritas...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
+        </tr>
+      </tbody>
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">MS Douro Queen</th>
+          <td class="govuk-table__cell">3343120</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">VH Veritas...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spirit of Discovery</th>
+          <td class="govuk-table__cell">4821678</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">VH Veritas...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
+        </tr>
+      </tbody>
     <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
         <th scope="row" class="govuk-table__header">MOL Triumph</th>
@@ -85,7 +105,27 @@
       <td class="govuk-table__cell">2021</td>
       <td class="govuk-table__cell">VH Veritas...</td>
       <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with verifier</strong></td>
-      <td class="govuk-table__cell"><a href="tabs"*>View summary</a><br><a href="tabs"*>Retract</a></td>
+      <td class="govuk-table__cell"><a href="er-summary2"*>View summary</a></td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">MS Douro Queen</th>
+      <td class="govuk-table__cell">3343120</td>
+      <td class="govuk-table__cell">2021</td>
+      <td class="govuk-table__cell">VH Veritas...</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with verifier</strong></td>
+      <td class="govuk-table__cell"><a href="er-summary2"*>View summary</a></td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Spirit of Discovery</th>
+      <td class="govuk-table__cell">4821678</td>
+      <td class="govuk-table__cell">2021</td>
+      <td class="govuk-table__cell">VH Veritas...</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with verifier</strong></td>
+      <td class="govuk-table__cell"><a href="er-summary2"*>View summary</a></td>
     </tr>
   </tbody>
 
