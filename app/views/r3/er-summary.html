@@ -1,0 +1,143 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<div class="govuk-grid-row">
+      <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Data upload successful
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <h3 class="govuk-notification-banner__heading">
+            Check emissions summary and submit for verification.
+          </h3>
+        </div>
+      </div>
+      <span class="govuk-caption-xl">IMO: 4123788</span>
+      <h1 class="govuk-heading-xl">Emissions report for MOL Triumph	</h1>
+   
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Total Fuel consumption and CO2 emissions
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+            <table class="govuk-table">
+           
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Total fuel consumption </th>
+                  <td class="govuk-table__cell"> 15237.90 m tonnes</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">  Total CO2 emissions                  </th>
+                  <td class="govuk-table__cell">47467.36 m tonnes</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">CO2 emissions from all voyages between ports under a MS jurisdiction</th>
+                  <td class="govuk-table__cell">892.63 m tonnes</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">CO2 emissions from all voyages which departed from ports under a MS jurisdiction</th>
+                  <td class="govuk-table__cell">23453.11 m tonnes</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"> CO2 emissions from all voyages to ports under a MS jurisdiction                  </th>
+                  <td class="govuk-table__cell">22582.56 m tonnes</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">CO2 emissions which occurred within ports under a MS jurisdiction at berth</th>
+                  <td class="govuk-table__cell">539.05 m tonnes</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                Distance travelled, time spent at sea and transport work
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+            <table class="govuk-table">
+           
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Total distance travelled </th>
+                  <td class="govuk-table__cell">127776.00 n miles                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">  Regular navigation                 </th>
+                  <td class="govuk-table__cell">127776.00 n miles                  </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Time spent at sea n</th>
+                  <td class="govuk-table__cell">6953.82 hours</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"> Regular navigation</th>
+                  <td class="govuk-table__cell">6953.82 hours</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Time at anchorage                </th>
+                  <td class="govuk-table__cell">31.88 hours                    </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Total transport work (mass)</th>
+                  <td class="govuk-table__cell">631585752.00 m tonnes · n miles</td>
+                </tr>
+              </tbody>
+            </table>          </div>
+        </div>
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                Energy efficiency
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+            <table class="govuk-table">
+           
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">Fuel consumption per distance</th>
+                  <td class="govuk-table__cell">119.25 kg / n mile               </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">  Fuel consumption per transport work (mass)            </th>
+                  <td class="govuk-table__cell">24.13 g / m tonnes · n miles                 </td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header">CO2
+                    emissions per distance </th>
+                  <td class="govuk-table__cell">371.49 kg CO2
+                    / n mile</td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <th scope="row" class="govuk-table__header"> CO2
+                    emissions per transport work (mass)</th>
+                  <td class="govuk-table__cell">75.16 g CO2
+                    / m tonnes · n mile</td>
+                </tr>
+              
+              </tbody>
+            </table>               </div>
+        </div>
+        </div></div>
+      <h2 class="govuk-heading-m">Now submit and verify the report</h2>
+
+        
+    <a href="dashboard4" button class="govuk-button" data-module="govuk-button">
+      Submit and verifier
+    </button></a>
+
+{% endblock %}

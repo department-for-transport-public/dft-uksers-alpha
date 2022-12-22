@@ -1,0 +1,168 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Emissions report submitted
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <h3 class="govuk-notification-banner__heading">
+        The ship operator has been notified.
+      </h3>
+    </div>
+  </div>
+    <h1 class="govuk-heading-xl">Emissions reports</h1>
+    
+    <table class="govuk-table">
+      <!-- <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Ship</th>
+          <th scope="col" class="govuk-table__header">IMO</th>
+          <th scope="col" class="govuk-table__header">Reporting period</th>
+          <th scope="col" class="govuk-table__header">Ship operator</th>
+          <th scope="col" class="govuk-table__header">Emissions report</th>
+          <th scope="col" class="govuk-table__header">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">MOL Triumph</th>
+          <td class="govuk-table__cell">4123788</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">John Smith Ship...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Approved</strong></td>
+          <td class="govuk-table__cell"><a href="doc-compl"*>View document of compliance</a></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Iron Gust</th>
+          <td class="govuk-table__cell">7664789</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">John Smith Ship...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
+        </tr>
+      </tbody>
+      
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">November</th>
+          <td class="govuk-table__cell">0168433</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">John Smith Ship...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
+        </tr>
+      </tbody>
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">MS Douro Queen</th>
+          <td class="govuk-table__cell">3343120</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">John Smith Ship...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell"><a href="file-upload"*>Upload a file</a><br></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Spirit of Discovery</th>
+          <td class="govuk-table__cell">4821678</td>
+          <td class="govuk-table__cell">2022</td>
+          <td class="govuk-table__cell">John Smith Ship...</td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Approved</strong></td>
+          <td class="govuk-table__cell"><a href="doc-compl"*>View document of compliance</a></td>
+        </tr>
+      </tbody>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">MOL Triumph</th>
+        <td class="govuk-table__cell">4123788</td>
+        <td class="govuk-table__cell">2021</td>
+        <td class="govuk-table__cell">John Smith Ship...</td>
+        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Approved</strong></td>
+        <td class="govuk-table__cell"><a href="doc-compl"*>View document of compliance</a></td>
+      </tr>
+    </tbody>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Iron Gust</th>
+        <td class="govuk-table__cell">7664789</td>
+        <td class="govuk-table__cell">2021</td>
+        <td class="govuk-table__cell">John Smith Ship...</td>
+        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Approved</strong></td>
+        <td class="govuk-table__cell"><a href="doc-compl"*>View document of compliance</a></td>
+      </tr>
+    </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">November</th>
+      <td class="govuk-table__cell">0168433</td>
+      <td class="govuk-table__cell">2021</td>
+      <td class="govuk-table__cell">VH Veritas...</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Approved</strong></td>
+      <td class="govuk-table__cell"><a href="doc-compl"*>View document of compliance</a></td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">MS Douro Queen</th>
+      <td class="govuk-table__cell">3343120</td>
+      <td class="govuk-table__cell">2021</td>
+      <td class="govuk-table__cell">VH Veritas...</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Approved</strong></td>
+      <td class="govuk-table__cell"><a href="doc-compl"*>View document of compliance</a></td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Spirit of Discovery</th>
+      <td class="govuk-table__cell">4821678</td>
+      <td class="govuk-table__cell">2021</td>
+      <td class="govuk-table__cell">VH Veritas...</td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">Approved</strong></td>
+      <td class="govuk-table__cell"><a href="doc-compl"*>View document of compliance</a></td>
+    </tr>
+  </tbody>
+
+  </table>
+  <nav class="govuk-pagination" role="navigation" aria-label="results">
+
+    <ul class="govuk-pagination__list">
+
+      <li class="govuk-pagination__item govuk-pagination__item--current">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 2" aria-current="page">
+          1
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+          2
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+          3
+        </a>
+      </li>
+      <li class="govuk-pagination__item">
+        <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 3">
+          4
+        </a>
+      </li>
+    </ul>
+    <div class="govuk-pagination__next">
+      <a class="govuk-link govuk-pagination__link" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+          <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+        </svg></a>
+    </div>
+  </nav>
+
+  </div>
+{% endblock %}
