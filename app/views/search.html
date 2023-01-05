@@ -1,0 +1,143 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+
+<h1 class="govuk-heading-xl">Search</h1>
+<form id="search-form" class="ng-untouched ng-pristine ng-valid">
+  <div class="govuk-grid-column-full">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-three-quarters">
+        <span class="govuk-hint">Enter a search term </span>
+      </div>
+      <div class="govuk-grid-column-three-quarters">
+
+        <div formcontrolname="term" govuk-text-input="" class="govuk-!-display-block govuk-form-group ng-untouched ng-pristine ng-valid">
+          <label class="govuk-label govuk-visually-hidden" for="term" id="l.term">Insert text</label>
+          <input class="govuk-input govuk-!-width-full" autocomplete="on" id="term" name="term" spellcheck="false" type="text">
+        </div>
+      </div>
+        <div class="govuk-grid-column-one-quarter"><button apppendingbutton="" govukbutton="" type="submit" class="govuk-button">Search</button></div>
+      </div>
+      </div>
+        <div class="govuk-grid-column-one-quarter"><div class="govuk-heading-s">Type</div>
+        <div formcontrolname="accountTypes" govuk-checkboxes="" class="govuk-checkboxes govuk-checkboxes--small govuk-!-display-block govuk-form-group ng-untouched ng-pristine ng-valid"><fieldset govukfieldset="" id="accountTypes" class="govuk-fieldset"><legend govuklegend="" id="l.accountTypes" class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+          </legend>
+            <div class="govuk-checkboxes"><div class="govuk-checkboxes__item"><input type="checkbox" class="govuk-checkboxes__input" id="accountTypes-0" name="accountTypes" aria-describedby="accountTypes-0-item-hint" value="filter1"><label class="govuk-label govuk-checkboxes__label" for="accountTypes-0">Filter 1
+            </label></div>
+
+            <div class="govuk-checkboxes__item"><input type="checkbox" class="govuk-checkboxes__input" id="accountTypes-1" name="accountTypes" aria-describedby="accountTypes-1-item-hint" value="filter2"><label class="govuk-label govuk-checkboxes__label" for="accountTypes-1">filter 2
+            </label></div>
+
+            </div>
+          </fieldset></div>
+          </div>
+            <div class="govuk-grid-column-three-quarters" style="border-bottom: 1px solid #b1b4b6; padding-bottom: 20px; "><ul class="govuk-list"><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Space Centre Head Office</a><div>
+               ID: EM00001 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>    
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            </li>
+            
+            <li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 1</a><div>
+               ID: EM00002 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+            </li>
+
+            <li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 2</a><div>
+               ID: EM00003 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 3</a><div>
+               ID: EM00004 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 4</a><div>
+               ID: EM00005 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 5</a><div>
+               ID: EM00006 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 6</a><div>
+               ID: EM00007 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 07</a><div>
+               ID: EM00008 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>Live</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 08</a><div>
+               ID: EM00009 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>New</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 09</a><div>
+               ID: EM00010 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>New</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 10</a><div>
+               ID: EM00011 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>New</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li class="search-results-list_item"><div class="govuk-grid-row"><div class="govuk-grid-column-three-quarters"><a routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 11</a><div>
+               ID: EM00012 &nbsp; &nbsp; Operator: <span class="wrap-text"> Name </span></div>
+            </div>
+              <div class="govuk-grid-column-one-quarter"><span class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong>New</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li>
+
+            </li><li _ngcontent-xqt-c106="" class="search-results-list_item"><div _ngcontent-xqt-c106="" class="govuk-grid-row"><div _ngcontent-xqt-c106="" class="govuk-grid-column-three-quarters"><a _ngcontent-xqt-c106="" routerlink="." govuklink="" href="/accounts" class="govuk-link">Test</a><div _ngcontent-xqt-c106=""> ID: EM00020 &nbsp; &nbsp; Operator: <span _ngcontent-xqt-c106="" class="wrap-text"> Name </span></div>
+            </div>
+              <div _ngcontent-xqt-c106="" class="govuk-grid-column-one-quarter"><span _ngcontent-xqt-c106="" class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong _ngcontent-xqt-c106="">Unapproved</strong></span></div>
+            </div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+            </li><li _ngcontent-xqt-c106="" class="search-results-list_item"><div _ngcontent-xqt-c106="" class="govuk-grid-row"><div _ngcontent-xqt-c106="" class="govuk-grid-column-three-quarters"><a _ngcontent-xqt-c106="" routerlink="." govuklink="" href="/accounts" class="govuk-link">Test 13</a><div _ngcontent-xqt-c106=""> ID: EM00021 &nbsp; &nbsp; Operator: <span _ngcontent-xqt-c106="" class="wrap-text"> Name </span></div>
+            </div>
+              <div _ngcontent-xqt-c106="" class="govuk-grid-column-one-quarter"><span _ngcontent-xqt-c106="" class="search-results-list_item_status govuk-tag govuk-tag--grey"><strong _ngcontent-xqt-c106="">Live</strong></span></div>
+            </div>
+
+            </li></ul>
+        </div>
+</form>
+</div>
+{% endblock %}
