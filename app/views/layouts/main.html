@@ -2,5 +2,49 @@
 For guidance on how to use layouts see:
 https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 #}
-
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
 {% extends "govuk-prototype-kit/layouts/govuk-branded.html" %}
+{% block header %}
+{{ govukHeader({
+  homepageUrl: "#",
+  serviceName: "Report maritime emissions for UK MRV",
+  serviceUrl: "#",
+  navigation: [
+    {
+      href: "#1",
+      text: "Navigation item 1",
+      active: true
+    },
+    {
+      href: "#2",
+      text: "Navigation item 2"
+    },
+    {
+      href: "#3",
+      text: "Navigation item 3"
+    },
+    {
+        href: "#4",
+        text: "Sign Out"
+      }
+  ]
+}) }}
+
+
+
+<div class="govuk-width-container">
+  {{ govukPhaseBanner({
+    tag: {
+      text: "alpha"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.' ,
+    html: 'You are logged in as: Tino Kingstone'
+  }) }}
+</div>
+
+
+
+
+{% endblock %}
+
+
