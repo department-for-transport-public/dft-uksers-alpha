@@ -1,0 +1,102 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} Start page template – {{
+serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block header %}
+<!-- Blank header with no service name for the start page -->
+{{ govukHeader() }} {% endblock %} {% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Section</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Subsection</a>
+    </li>
+  </ol>
+</div>
+{% endblock %} {% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Report maritime emissions for UK MRV
+    </h1>
+    <p>This service is for reporting maritime emissions under the UK’s monitoring, reporting and verification (MRV) scheme.</p>
+    <p>UK MRV applies to ships over 5,000 gross tonnes, that are transporting cargo and passengers for commercial purposes on voyages:</p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>between a UK and non-EEA port</li>
+      <li>between two UK ports</li>
+      <li>within UK ports (including while at berth)</li>
+    </ul>
+
+    <p>Use this service to:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <!-- <li>create or upload emission monitoring plan</li> -->
+      <li>report maritime emissions</li>
+      <!-- <li>verify emissions data</li> -->
+      <li>view documents of compliance</li>
+    </ul>
+
+    <div class="govuk-inset-text">
+    You should continue to use the EU Thetis-MRV service to report maritime emissions for journeys between the UK and the EEA.    </div>
+    <p>You can use the service if you are:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>a ship operator</li>
+      <li>any organisation or person which has assumed the responsibility for the operation of ships calling at or departing from UK ports</li>
+      <li>an accredited verifier</li>
+    </ul>
+    <a
+      href="log-reg"
+      role="button"
+      draggable="false"
+      class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+      data-module="govuk-button"
+    >
+      Start now
+      <svg
+        class="govuk-button__start-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="17.5"
+        height="19"
+        viewBox="0 0 33 40"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+      </svg>
+    </a>
+    
+    <h2 class="govuk-heading-m">Before you start</h2>
+
+    <p>To create an account you’ll need your company details.</p>
+    <p>Before you can submit emissions data you’ll need to provide details of your vessels, including the IMO number.</p>
+
+  
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <aside class="app-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">Subsection</h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="#"> Related link </a>
+          </li>
+          <li>
+            <a href="#"> Related link </a>
+          </li>
+          <li>
+            <a href="#" class="govuk-!-font-weight-bold">
+              More <span class="govuk-visually-hidden">in Subsection</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">IMO: 4123788</span>
+      <h1 class="govuk-heading-xl">Upload emissions report data for MOL Triumph	</h1>
+
+
+      <p class="govuk-body-l">Use this page to upload your emissions report data. The file must be an XML or CSV.</p>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="file-upload-1">
+          Upload a file
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+
+      <a href="file-upload2" button class="govuk-button" data-module="govuk-button">
+        Upload data
+      </button></a><br>
+      <p class="govuk-body govuk-!-margin-bottom-7"><a class="govuk-link" href="https://www.gov.uk/government/publications/mgn-662-m-united-kingdom-monitoring-reporting-and-verification-uk-mrv-regime/mgn-662-m-annex-ii-uk-monitoring-reporting-and-verification-uk-mrv-regime">View template for emissions reports</a></p>
+
+    </div>
+    
+  </div>
+
+
+{% endblock %}
