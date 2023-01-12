@@ -3,18 +3,29 @@
 
 
 <div class="govuk-grid-row">
+  <span class="govuk-caption-xl">    <p>There are 50 ships managed by <strong>Verifavia Shipping</strong> - <a href="verifiers">change</a></p>
+  </span>
+
     <h1 class="govuk-heading-xl">Emissions reports</h1>
-    
-    
+    <div class="govuk-form-group">
+      <span class="govuk-error-message"></span>
+      <span class="govuk-caption-m">Filter by ship name, IMO or status</span>
+      <input id="filterInput" type="text" aria-label="Enter IMO, submission reference or email to filter results by" class="govuk-input govuk-input--width-20">
+      <button id="filter" class="govuk-button" onclick="filterTable()" type="button">Filter</button>
+      <div id="currentFilterList">
+          <p class="govuk-heading-s" id="filterHeading"></p>
+          <ul id="currentFilters" class="govuk-list--bullet"></ul>
+          <a href="#" class="link-button" id="clearBtn" onclick="resetTable()" style="display: none;">Clear filter</a>
+      </div>
+  </div>
     <table class="govuk-table">
       <!-- <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption> -->
       <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header">Ship</th>
           <th scope="col" class="govuk-table__header">IMO</th>
-          <th scope="col" class="govuk-table__header">Reporting period</th>
-          <th scope="col" class="govuk-table__header">Ship operator</th>
-          <th scope="col" class="govuk-table__header">Emissions report</th>
+          <th scope="col" class="govuk-table__header">Year</th>
+          <th scope="col" class="govuk-table__header">ER status</th>
           <th scope="col" class="govuk-table__header">Actions</th>
         </tr>
       </thead>
@@ -23,8 +34,7 @@
           <th scope="row" class="govuk-table__header">MOL Triumph</th>
           <td class="govuk-table__cell">4123788</td>
           <td class="govuk-table__cell">2022</td>
-          <td class="govuk-table__cell">John Smith Ship...</td>
-          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">not started</strong></td>
           <td class="govuk-table__cell"><a href="file-upload"*>Upload emissions report</a><br></td>
         </tr>
       </tbody>
@@ -33,7 +43,6 @@
           <th scope="row" class="govuk-table__header">Iron Gust</th>
           <td class="govuk-table__cell">7664789</td>
           <td class="govuk-table__cell">2022</td>
-          <td class="govuk-table__cell">John Smith Ship...</td>
           <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
           <td class="govuk-table__cell"><a href="file-upload"*>Upload emissions report</a><br></td>
         </tr>
@@ -44,9 +53,8 @@
           <th scope="row" class="govuk-table__header">November</th>
           <td class="govuk-table__cell">0168433</td>
           <td class="govuk-table__cell">2022</td>
-          <td class="govuk-table__cell">John Smith Ship...</td>
-          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
-          <td class="govuk-table__cell"><a href="file-upload"*>Upload emissions report</a><br></td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--red">rejected</strong></td>
+          <td class="govuk-table__cell"><a href="file-upload"*>View correspondence </a><br></td>
         </tr>
       </tbody>
         <tbody class="govuk-table__body">
@@ -54,7 +62,6 @@
           <th scope="row" class="govuk-table__header">MS Douro Queen</th>
           <td class="govuk-table__cell">3343120</td>
           <td class="govuk-table__cell">2022</td>
-          <td class="govuk-table__cell">John Smith Ship...</td>
           <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">NOT started</strong></td>
           <td class="govuk-table__cell"><a href="file-upload"*>Upload emissions report</a><br></td>
         </tr>
@@ -64,9 +71,8 @@
           <th scope="row" class="govuk-table__header">Spirit of Discovery</th>
           <td class="govuk-table__cell">4821678</td>
           <td class="govuk-table__cell">2022</td>
-          <td class="govuk-table__cell">John Smith Ship...</td>
-          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with company</strong></td>
-          <td class="govuk-table__cell"><a href="doc-upload">Upload document of compliance</a></td>
+          <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with verifier</strong></td>
+          <td class="govuk-table__cell"><a href="status">View summary</a></td>
         </tr>
       </tbody>
     <tbody class="govuk-table__body">
@@ -74,9 +80,8 @@
         <th scope="row" class="govuk-table__header">MOL Triumph</th>
         <td class="govuk-table__cell">4123788</td>
         <td class="govuk-table__cell">2021</td>
-        <td class="govuk-table__cell">John Smith Ship...</td>
-        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with company</strong></td>
-        <td class="govuk-table__cell"><a href="doc-upload">Upload document of compliance</a></td>
+        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with verifier</strong></td>
+        <td class="govuk-table__cell"><a href="status">View summary</a></td>
       </tr>
     </tbody>
     <tbody class="govuk-table__body">
@@ -84,9 +89,8 @@
         <th scope="row" class="govuk-table__header">Iron Gust</th>
         <td class="govuk-table__cell">7664789</td>
         <td class="govuk-table__cell">2021</td>
-        <td class="govuk-table__cell">John Smith Ship...</td>
-        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with company</strong></td>
-        <td class="govuk-table__cell"><a href="doc-upload">Upload document of compliance</a></td>
+        <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with verifier</strong></td>
+        <td class="govuk-table__cell"><a href="status">View summary</a></td>
       </tr>
     </tbody>
   <tbody class="govuk-table__body">
@@ -94,9 +98,8 @@
       <th scope="row" class="govuk-table__header">November</th>
       <td class="govuk-table__cell">0168433</td>
       <td class="govuk-table__cell">2021</td>
-      <td class="govuk-table__cell">VH Veritas...</td>
-      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with company</strong></td>
-      <td class="govuk-table__cell"><a href="doc-upload">Upload document of compliance</a></td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">submitted</strong></td>
+      <td class="govuk-table__cell"><a href="status">View documents of compliance</a></td>
     </tr>
   </tbody>
   <tbody class="govuk-table__body">
@@ -104,9 +107,8 @@
       <th scope="row" class="govuk-table__header">MS Douro Queen</th>
       <td class="govuk-table__cell">3343120</td>
       <td class="govuk-table__cell">2021</td>
-      <td class="govuk-table__cell">VH Veritas...</td>
-      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with company</strong></td>
-      <td class="govuk-table__cell"><a href="doc-upload">Upload document of compliance</a></td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with verifier</strong></td>
+      <td class="govuk-table__cell"><a href="status">View summary</a></td>
     </tr>
   </tbody>
   <tbody class="govuk-table__body">
@@ -114,9 +116,8 @@
       <th scope="row" class="govuk-table__header">Spirit of Discovery</th>
       <td class="govuk-table__cell">4821678</td>
       <td class="govuk-table__cell">2021</td>
-      <td class="govuk-table__cell">VH Veritas...</td>
-      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--yellow">with company</strong></td>
-      <td class="govuk-table__cell"><a href="doc-upload">Upload document of compliance</a></td>
+      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">submitted</strong></td>
+      <td class="govuk-table__cell"><a href="status">View documents of compliance</a></td>
     </tr>
   </tbody>
   </table>
@@ -152,5 +153,5 @@
     </div>
   </nav>
 
-  </div>
+</div>
 {% endblock %}
