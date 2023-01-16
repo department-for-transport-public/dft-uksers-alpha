@@ -1,0 +1,28 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <span class="govuk-caption-xl">IMO: 4123788</span>
+      <h1 class="govuk-heading-xl">Upload document of compliance for MOL Triumph	</h1>
+
+
+      <p class="govuk-body-l">Use this page to upload your document of compliance. The file must be a PDF.</p>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="file-upload-1">
+          Upload a file
+        </label>
+        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+      </div>
+
+
+      <a href="doc-compl" button class="govuk-button" data-module="govuk-button">
+        Upload PDF
+      </button></a><br>
+
+    </div>
+    
+  </div>
+
+
+{% endblock %}

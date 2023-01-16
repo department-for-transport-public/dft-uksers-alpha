@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Select a company to manage emissions reports</h1>
+    
+    <table class="govuk-table">
+      <!-- <caption class="govuk-table__caption govuk-table__caption--m">Dates and amounts</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Company</th>
+          <th scope="col" class="govuk-table__header">Number of ships</th>
+
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">John Smith Shipping ltd</th>
+          <td class="govuk-table__cell">50</td>
+          <td class="govuk-table__cell"><a href="dashboard3"*>Select</a><br></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Carnival Corporation</th>
+          <td class="govuk-table__cell">64</td>
+          <td class="govuk-table__cell"><a href="dashboard3"*>Select</a><br></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Libra Group</th>
+          <td class="govuk-table__cell">47</td>
+          <td class="govuk-table__cell"><a href="dashboard3"*>Select</a><br></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Sealion Shipping</th>
+          <td class="govuk-table__cell">16</td>
+          <td class="govuk-table__cell"><a href="dashboard3"*>Select</a><br></td>
+        </tr>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">V Ships</th>
+          <td class="govuk-table__cell">22</td>
+          <td class="govuk-table__cell"><a href="dashboard3"*>Select</a><br></td>
+        </tr>
+      </tbody>
+     
+  </table>
+  
+</div>
+</div>
+{% endblock %}
