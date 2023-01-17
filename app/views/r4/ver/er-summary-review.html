@@ -1,7 +1,18 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
 {{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
 <div class="govuk-grid-row">
-     
+      <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Emissions report uploaded by John Smith Shipping Ltd
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <h3 class="govuk-notification-banner__heading">
+            Check emissions report and submit.
+          </h3>
+        </div>
+      </div>
       <span class="govuk-caption-xl">IMO: 4123788</span>
       <h1 class="govuk-heading-xl">Emissions report for MOL Triumph	</h1>
    
@@ -122,8 +133,16 @@
             </table>               </div>
         </div>
         </div></div>
+      <h2 class="govuk-heading-m">Now submit the report</h2>
 
-        
-
+      <div class="govuk-button-group">
+        <a href="dashboard4" button class="govuk-button" data-module="govuk-button">
+          Submit
+        </button></a>
+        <a href="dashboard4" button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Reject
+        </button></a>
+      </div>
+ 
 
 {% endblock %}

@@ -6,24 +6,28 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
   <h1 class="govuk-heading-xl">Round 4</h1>
 
   <div class="govuk-grid-row">
-  
-    <div class="govuk-grid-column-one-third">
-      <p class="govuk-body">Ship operator view - Concept 1</p>
+
+    <div class="govuk-grid-column-one-half">
+      <p><strong>Ship operators</strong></p>
+      <p class="govuk-body"> Concept 1</p>
       <ul class="govuk-list govuk-list--bullet">
         <li><a href="/r4/dashboard2">Dashboard tiles</a></li>
-        <li><a href="/r4/verifier">Select a verifier</a></li>
         <li><a href="/r4/dashboard3">Emissions report table </a></li>
         <li><a href="/r4/enter-data">Enter data manually</a></li>
         <li><a href="/r4/er-summary">Emissions report summary</a></li>
         <li><a href="/r4/dashboard4">Emissions report with verifier </a></li>
-
+        <br>
+        <p class="govuk-body">Concept 2</p>
+        <li><a href="/r4/notifications2">Notification - verifier uploaded ER</a></li>
+        <li><a href="/r4/er-summary-review">Review and submit ER from verifer</a></li>
 
 
       </ul>
           </div>
 
-          <div class="govuk-grid-column-one-third">
-            <p class="govuk-body">Verifier view - Concept 2</p>
+          <div class="govuk-grid-column-one-half">
+            <p><strong>Verifiers</strong></p>
+            <p class="govuk-body">Concept 2</p>
             <ul class="govuk-list govuk-list--bullet">
               <li><a href="/r4/ver/dashboard2">Dashboard tiles</a></li>
               <li><a href="/r4/ver/company">Select a company </a></li>
@@ -33,6 +37,10 @@ GOV.UK Prototype Kit {% endblock %} {% block content %}
               <li><a href="/r4/ver/er-summary">Emissions report summary</a></li>
               <li><a href="/r4/ver/dashboard4">Emissions report with company </a></li>
       
+              <br>
+              <p class="govuk-body">Concept 1</p>
+              <li><a href="/r4/ver/notifications">Notification - ship operator uploaded ER</a></li>
+              <li><a href="/r4/ver/er-summary-review">Review and submit ER from ship operator</a></li>
       
       
             </ul>
